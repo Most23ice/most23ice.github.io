@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap%27');
+body
+{
+    font-family: "Poppins",sans-serif;
+   overflow-x: hidden;
+    background: url(powder-mix-splash-with-dark-background.jpg);
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+   
+}
+.scatola 
+{  
+    padding: 1%;
+    justify-content: center;
+     display: flex;
+    font-size: 50px;
+    border-radius: 50px;
+    top: 22.5%;
+    position: absolute;
+    color: rgba(245, 245, 245, 0.959);
+    width: 60%;
+    height: 50%;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  
+} 
+a
+{
+    transition: all 0.15s linear;
+
+    height: 75px;
+    width: 75px;
+    background-color: aliceblue;
+    border-radius: 12.5px;
+    background-image: url(paypal.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 4.25%;
+    left: 1.5%;
+}
+a:hover{
+    transition: all 0.15s linear;
+    transform: scale(1.25);
+}
+.solo
+{ backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(117, 118, 124, 0.15);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    height: 28px;
+    width: 400px;
+    border-radius: 10px;
+    color: white;
+}
+login{
+    backdrop-filter: blur(23px) saturate(300%);
+    -webkit-backdrop-filter: blur(23px) saturate(300%);
+    background-color: rgba(40, 40, 40, 0.62);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+popup
+{
+    padding: 2.5%;
+    justify-self: center;
+    display: flex;
+    height: 50%;
+    width: 35%;
+    background: rgb(50, 91, 116);
+    position: absolute;
+    top: 17%;
+    border-radius: 20px ;
+    
+
+}
+#name,#password
+{
+    background: rgb(2,0,36);
+background: linear-gradient(100deg, rgba(2,0,36,1) 0%, rgba(43,4,52,1) 100%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 12.5%;
+    height: 10%;
+    width: 40%;
+   border: solid 3.25px rgba(17, 25, 40, 0.75);
+   color: white;
+  
+}
+#password
+{
+    right: 5.15%;
+}
+#amg
+{
+    display: block;
+    border-radius: 50%;
+    height:150px;
+    width:150px;
+    background: white;
+}
+#dropZone{
+    display: block;
+    height: 200px;
+    width: 200px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 32%;
+    background-size: cover;
+    background-position: center;
+   background-repeat: no-repeat;
+
+}
+#login{
+    position: absolute;
+    top: 52.5%;
+    left: 45%;
+    height: 50px;
+    width: 100px;
+}
