@@ -30,7 +30,7 @@ body
     border: 1px solid rgba(255, 255, 255, 0.125);
   
 } 
-a
+#paypal
 {
     transition: all 0.15s linear;
 
@@ -45,7 +45,7 @@ a
     bottom: 4.25%;
     left: 1.5%;
 }
-a:hover{
+#paypal:hover{
     transition: all 0.15s linear;
     transform: scale(1.25);
 }
@@ -133,4 +133,10 @@ background: linear-gradient(100deg, rgba(2,0,36,1) 0%, rgba(43,4,52,1) 100%, rgb
     left: 45%;
     height: 50px;
     width: 100px;
+}
+#credits{
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;   
 }
