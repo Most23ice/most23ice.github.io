@@ -2,7 +2,7 @@
 body
 {
     font-family: "Poppins",sans-serif;
-   overflow-x: hidden;
+   overflow: hidden;
     background: url(powder-mix-splash-with-dark-background.jpg);
     display: flex;
     justify-content: center;
@@ -79,26 +79,31 @@ popup
     padding: 2.5%;
     justify-self: center;
     display: flex;
-    height: 50%;
+    height: 55%;
     width: 35%;
-    background: rgb(50, 91, 116);
     position: absolute;
     top: 17%;
     border-radius: 20px ;
+    backdrop-filter: blur(7px) saturate(125%);
+    -webkit-backdrop-filter: blur(7px) saturate(125%);
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
     
 
 }
 #name,#password
 {
     background: rgb(2,0,36);
-background: linear-gradient(100deg, rgba(2,0,36,1) 0%, rgba(43,4,52,1) 100%, rgba(0,212,255,1) 100%);
+background: linear-gradient(100deg, rgba(2,0,36,1) 0%, rgba(0,154,170,0.8838560983036341) 0%, rgba(0,255,252,1) 100%, rgba(0,212,255,1) 100%);
     border-radius: 10px;
     position: absolute;
     bottom: 12.5%;
     height: 10%;
     width: 40%;
    border: solid 3.25px rgba(17, 25, 40, 0.75);
-   color: white;
+   color:black;
+   padding-left: 5px;
   
 }
 #password
@@ -128,11 +133,14 @@ background: linear-gradient(100deg, rgba(2,0,36,1) 0%, rgba(43,4,52,1) 100%, rgb
 
 }
 #login{
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(5,6,71,0.9596987949328476) 100%, rgba(252,70,107,1) 100%);
+    border-radius: 20px;
     position: absolute;
-    top: 52.5%;
+    bottom: 0.65%;
     left: 45%;
     height: 50px;
-    width: 100px;
+    width: 70px;
 }
 #credits{
     color: white;
@@ -140,3 +148,84 @@ background: linear-gradient(100deg, rgba(2,0,36,1) 0%, rgba(43,4,52,1) 100%, rgb
     bottom: 100px;
     right: 100px;   
 }
+h2{
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: 55%;
+    left: 43%;
+}
+#credits{
+    background-image: url(copyright.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 2%;
+    color: white;
+    display: block;
+    border-radius: 20px;
+    background-color: white;
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    bottom: 30%;
+    right: 1.5%;
+    top: 85%;
+    padding: 3px;
+    
+    transition: all 0.15s linear;
+}
+#credits:hover{
+    transition: all 0.15s linear;
+    transform: scale(1.25);
+
+}
+creditsP{
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(49, 49, 49, 0.75);
+    
+    }
+    u {
+        backdrop-filter: blur(7px) saturate(180%);
+        -webkit-backdrop-filter: blur(7px) saturate(180%);
+        background-color: rgba(41, 51, 73, 0.11);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+     height: 60%;
+     width: 40%;
+     padding: 25px;
+    }
+ 
+    #copyright{
+        position: absolute;
+        bottom: 4%;
+        color: white;
+        transition: all 0.15s linear;
+
+    }
+    #copyright:hover{
+        transition: all 0.15s linear;
+        transform: scale(1.25);
+    }
+    #closeCre{
+        
+        background-image: url(close.png);
+        background-size: contain;
+        background-position: center;
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        border: none;
+        position: absolute;
+        top: 20%;
+        right: 30%;
+    }

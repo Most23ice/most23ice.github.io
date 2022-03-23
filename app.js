@@ -84,3 +84,17 @@ login.onclick = ()=>{
 
 
 }
+let title=document.querySelector("title")
+setInterval(() => {
+    title.textContent=`${h}:${m}:${s}`
+}, 0);
+let credits = document.querySelector('#credits');
+let creditsP = document.querySelector('creditsP');
+let closeCre = document.querySelector('#closeCre');
+
+credits.onclick = function() {
+    creditsP.style.display = 'flex';
+}
+closeCre.onclick = function() {
+    creditsP.style.display = 'none';
+}
