@@ -98,3 +98,4 @@ credits.onclick = function() {
 closeCre.onclick = function() {
     creditsP.style.display = 'none';
 }
+//ciao//
